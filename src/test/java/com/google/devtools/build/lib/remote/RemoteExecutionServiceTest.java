@@ -3468,6 +3468,11 @@ public class RemoteExecutionServiceTest {
       }
 
       @Override
+      public boolean isBuildRunfileManifests() {
+        return true;
+      }
+
+      @Override
       public String getWorkspaceName() {
         return TestConstants.WORKSPACE_NAME;
       }

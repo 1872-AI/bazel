@@ -47,6 +47,12 @@ public interface RunfilesTree {
   /** Returns whether the runfile symlinks should be materialized during the build. */
   boolean isBuildRunfileLinks();
 
+  /**
+   * Returns whether an action writes the input manifest of this runfiles tree. If not, code that
+   * materializes the tree outside of an action has to write the manifest itself first.
+   */
+  boolean isBuildRunfileManifests();
+
   /** Returns the name of the workspace that the build is occurring in. */
   String getWorkspaceName();
 

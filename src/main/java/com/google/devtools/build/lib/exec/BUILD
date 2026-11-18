@@ -203,6 +203,7 @@ java_library(
         "//src/main/java/com/google/devtools/build/lib/vfs",
         "//src/main/java/com/google/devtools/build/lib/vfs:pathfragment",
         "//third_party/java/guava:base",
+        "//third_party/java/guava:hash",
         "//third_party/java/jsr305_annotations",
     ],
 )
